@@ -1,0 +1,12 @@
+.action {
+  display: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  position: fixed;
+  z-index: 2;
+  margin: 10px;
+}
+
+.delbutton:hover .action {
+  display: block;
+}

@@ -1,0 +1,24 @@
+<!-- Перевірка, чи список категорій пустий -->
+<div *ngIf="categories.length === 0" class="alert alert-info text-center">
+  Категорії наразі відсутні.
+</div>
+
+<a class="btn btn-primary mb-3" routerLink="/category/create">Додати</a>
+
+<!-- Вивід карток, якщо є категорії -->
+<div class="row" *ngIf="categories.length > 0">
+  <div *ngFor="let category of categories" class="col-md-3 mb-4">
+    <div class="card h-100 delbutton shadow-sm">
+      <img [src]=`${environment.imagePath}800_${category.image}` [alt]="category.name" class="card-img-top"
+        style="height: 200px; object-fit: cover;">
+      <button type="button" class=" action btn btn-danger btn-sm position-absolute top-0 end-0 m-2"
+        (click)="deleteCategory(category.id)">
+        ✘
+      </button>
+      <a class="action btn btn-primary mb-3" routerLink="/category/edit">✎</a>
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ category.name }}</h5>
+      </div>
+    </div>
+  </div>
+</div>

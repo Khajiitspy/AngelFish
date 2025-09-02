@@ -1,0 +1,12 @@
+<h1 class="text-center">Вхід</h1>
+<form (ngSubmit)="login()" class="col-md-6 offset-md-3">
+  <div class="mb-3">
+    <label for="email" class="form-label">Еллекронна пошта</label>
+    <input type="email" [(ngModel)]="email" name="name" class="form-control" id="email" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Пароль</label>
+    <input type="password" [(ngModel)]="password" name="password" class="form-control" id="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Вхід</button>
+</form>
