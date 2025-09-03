@@ -13,7 +13,7 @@ export const routes: Routes = [
     path: 'category',
     children: [
       { path: 'create', component: CategoryCreate },
-      { path: 'edit', component: CategoryEdit }
+      { path: 'edit/:slug', component: CategoryEdit }
     ]
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },

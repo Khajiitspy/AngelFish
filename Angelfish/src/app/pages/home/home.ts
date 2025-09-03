@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../../services/category.service';
-import { Category } from '../../models/Category';
+import * as CategoryModel from '../../models/Category';
 import { CommonModule } from '@angular/common';
 import {environment} from '../../../environments/environment';
 import {RouterLink} from '@angular/router';
-import { serialize } from 'object-to-formdata';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +13,7 @@ import { serialize } from 'object-to-formdata';
 })
 export class Home implements OnInit {
 
-  categories: Category[] = [];
+  categories: CategoryModel.Category[] = [];
 
   constructor(private categoryService: CategoryService) {}
 

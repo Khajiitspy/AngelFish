@@ -19,7 +19,7 @@ import { serialize } from 'object-to-formdata';
 export class CategoryCreate {
   category: ICategoryCreate = { name: '', slug: '' };
   imagePreview: string | ArrayBuffer | null = null;
-
+  backendErrors: string[] = [];
 
   categoryForm: FormGroup;
 
@@ -61,7 +61,7 @@ export class CategoryCreate {
   onSubmit() {
 
     if (this.categoryForm.invalid) {
-      console.log('Form invalid');
+      this.categoryForm.markAllAsTouched();
       return;
 
     }
@@ -74,12 +74,21 @@ export class CategoryCreate {
     // перетворюємо в FormData
     const formData = serialize(formValue);
 
+    this.backendErrors = [];
+
     this.categoryService.createCategory(formData).subscribe({
       next: (res) => {
         this.router.navigate(['/']);
       },
       error: (err) => {
         console.error(err);
+        if (err.error && Array.isArray(err.error)) {
+          this.backendErrors = err.error;
+        } else if (err.error && typeof err.error === 'string') {
+          this.backendErrors = [err.error];
+        } else {
+          this.backendErrors = err.error.errors ?? ['Невідома помилка сервера.'];
+        }
       }
     });
   }

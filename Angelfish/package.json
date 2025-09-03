@@ -31,6 +31,7 @@
     "bootstrap": "^5.3.8",
     "object-to-formdata": "^4.5.1",
     "rxjs": "~7.8.0",
+    "slugify": "^1.6.6",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
