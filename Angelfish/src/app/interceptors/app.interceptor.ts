@@ -14,12 +14,12 @@ export const AppInterceptor: HttpInterceptorFn = (req, next) => {
   return next(req).pipe(
     catchError((err: HttpErrorResponse) => {
       console.error(err);
-      return throwError(errorService.processError(err.status));
+      const processedError = errorService.processError(err);
+      return throwError(() => processedError);
     }),
 
     finalize(() => {
       loadingService.hide()
-      errorService.hideError();
     })
   );
 };

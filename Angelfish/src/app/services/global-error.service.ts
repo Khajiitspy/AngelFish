@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import {HttpErrorResponse} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,37 +11,37 @@ export class GlobalErrorService {
   private _errorTypeDictionary = new Map<number, new (...args: any[]) => Error>([
     [0, class NetworkError extends Error {
       constructor(message?: string) {
-        super(message || 'Server is not responding. Please try again later.');
+        super(message || 'Сервер не відповідає. Спробуйте пізніше');
         this.name = 'NetworkError';
       }
     }],
     [400, class BadRequestError extends Error {
       constructor(message?: string) {
-        super(message || 'Bad Request');
+        super(message || 'Помилка запиту. Перевірте правильність введення');
         this.name = 'BadRequestError';
       }
     }],
     [401, class UnauthorizedError extends Error {
       constructor(message?: string) {
-        super(message || 'Unauthorized');
+        super(message || 'Ви не авторизовані');
         this.name = 'UnauthorizedError';
       }
     }],
     [403, class ForbiddenError extends Error {
       constructor(message?: string) {
-        super(message || 'Forbidden');
+        super(message || 'Ви не маєте доступу до цієї сторінки');
         this.name = 'ForbiddenError';
       }
     }],
     [404, class NotFoundError extends Error {
       constructor(message?: string) {
-        super(message || 'Not Found');
+        super(message || 'Не знайдено');
         this.name = 'NotFoundError';
       }
     }],
     [500, class InternalServerError extends Error {
       constructor(message?: string) {
-        super(message || 'Internal Server Error');
+        super(message || 'Проблема сервера. Спробуйте пізніше');
         this.name = 'InternalServerError';
       }
     }]
@@ -49,20 +50,27 @@ export class GlobalErrorService {
   public isError = this._isError.asObservable();
   public message: string = "";
 
-  processError(errorType: any): Error {
-    const errorClass = this._errorTypeDictionary.get(errorType);
-
+  processError(err: HttpErrorResponse): HttpErrorResponse {
     this._isError.next(true);
+
+    const errorClass = this._errorTypeDictionary.get(err.status);
 
     if (errorClass) {
       const errorInstance = new errorClass();
       this.message = errorInstance.message;
-      console.log(this.message);
-      return errorInstance;
+    } else {
+      this.message = 'Невідома помилка';
     }
-    this.message = "Problem with server";
 
-    return new Error(this.message);
+    console.log(this.message);
+
+    return new HttpErrorResponse({
+      error: err.error,
+      headers: err.headers,
+      status: err.status,
+      statusText: err.statusText,
+      url: err.url || undefined,
+    });
   }
 
   hideError(){

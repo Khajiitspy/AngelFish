@@ -1,0 +1,4 @@
+<div *ngIf="errorService.isError | async" class="global-error alert alert-danger alert-dismissible">
+  {{ errorService.message }}
+  <button type="button" class="btn-close" aria-label="Close" (click)="errorService.hideError()"></button>
+</div>

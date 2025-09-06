@@ -1,0 +1,16 @@
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/bin/Debug/net9.0/Core.deps.json
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/bin/Debug/net9.0/Core.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/bin/Debug/net9.0/Core.pdb
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/bin/Debug/net9.0/Domain.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/bin/Debug/net9.0/Domain.pdb
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.csproj.AssemblyReference.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.AssemblyInfoInputs.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.csproj.CoreCompileInputs.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.sourcelink.json
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.csproj.Up2Date
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/refint/Core.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.pdb
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/ref/Core.dll

@@ -1,0 +1,15 @@
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/bin/Debug/net9.0/Domain.runtimeconfig.json
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/bin/Debug/net9.0/Domain.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/bin/Debug/net9.0/Domain.pdb
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.csproj.AssemblyReference.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.pdb
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.genruntimeconfig.cache
+/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/ref/Domain.dll
