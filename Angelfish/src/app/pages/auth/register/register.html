@@ -1,1 +1,58 @@
-<p>register works!</p>
+<h1 class="text-center">Create a user! </h1>
+
+<div *ngIf="backendErrors.length > 0" class="alert alert-danger">
+  <ul class="mb-0">
+    <li *ngFor="let error of backendErrors">{{ error }}</li>
+  </ul>
+</div>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="col-md-6 offset-md-3">
+  <div class="mb-3">
+    <label for="firstName">First Name:</label>
+    <input type="text" formControlName="firstName" class="form-control"
+      [class.is-invalid]="registerForm.get('firstName')?.touched && registerForm.get('firstName')?.invalid" />
+    <div class="text-danger" *ngIf="registerForm.get('firstName')?.touched && registerForm.get('firstName')?.invalid">
+      Name is required
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="lastName">Last Name:</label>
+    <input type="text" formControlName="lastName" class="form-control"
+      [class.is-invalid]="registerForm.get('lastName')?.touched && registerForm.get('lastName')?.invalid" />
+    <div class="text-danger" *ngIf="registerForm.get('lastName')?.touched && registerForm.get('lastName')?.invalid">
+      Last Name is required!
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" class="form-control"
+      [class.is-invalid]="registerForm.get('email')?.touched && registerForm.get('email')?.invalid" />
+    <div class="text-danger" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">
+      Email is required!
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password">Password:</label>
+    <input type="password" formControlName="password" class="form-control"
+      [class.is-invalid]="registerForm.get('password')?.touched && registerForm.get('password')?.invalid" />
+    <div class="text-danger" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+      Password is required!
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="imageFile" class="form-label">Image</label>
+    <input type="file" (change)="onFileSelected($event)" class="form-control" id="imageFile">
+  </div>
+
+  <div class="mb-3 text-center" *ngIf="selectedImage">
+    <img [src]="selectedImage" alt="Preview" style="height: 200px; object-fit: cover; max-width: 100%;">
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary w-100" [disabled]="registerForm.invalid">Register</button>
+</form>

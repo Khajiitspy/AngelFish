@@ -74,7 +74,7 @@ export class CategoryCreate {
     // перетворюємо в FormData
     const formData = serialize(formValue);
 
-    this.backendErrors = [];
+    // this.backendErrors = [];
 
     this.categoryService.createCategory(formData).subscribe({
       next: (res) => {

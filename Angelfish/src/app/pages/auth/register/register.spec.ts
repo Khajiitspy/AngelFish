@@ -1,23 +1,38 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RegisterComponent } from './register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { Register } from './register';
-
-describe('Register', () => {
-  let component: Register;
-  let fixture: ComponentFixture<Register>;
+describe('RegisterComponent', () => {
+  let component: RegisterComponent;
+  let fixture: ComponentFixture<RegisterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Register]
-    })
-    .compileComponents();
+      declarations: [RegisterComponent],
+      imports: [ReactiveFormsModule, HttpClientTestingModule]
+    }).compileComponents();
+  });
 
-    fixture = TestBed.createComponent(Register);
+  beforeEach(() => {
+    fixture = TestBed.createComponent(RegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have an invalid form initially', () => {
+    expect(component.registerForm.valid).toBeFalsy();
+  });
+
+  it('should validate form inputs', () => {
+    component.registerForm.controls['firstName'].setValue('John');
+    component.registerForm.controls['lastName'].setValue('Doe');
+    component.registerForm.controls['email'].setValue('john@example.com');
+    component.registerForm.controls['password'].setValue('password123');
+    expect(component.registerForm.valid).toBeTruthy();
   });
 });
