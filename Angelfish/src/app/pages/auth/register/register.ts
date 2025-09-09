@@ -64,10 +64,7 @@ export class Register {
     if (this.registerForm.invalid) {
       this.registerForm.markAllAsTouched();
       return;
-
     }
-
-    console.log('Form valid', this.registerForm.value);
 
     const formValue = this.registerForm.value;
 

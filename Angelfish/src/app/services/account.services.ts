@@ -1,6 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {RegisterUser, RegisterResponse, User} from '../models/Account';
+import { BehaviorSubject } from 'rxjs';
+import {RegisterResponse, User, TokenModel} from '../models/Account';
 import { Injectable } from '@angular/core';
 import { jwtDecode } from 'jwt-decode';
 import {environment} from '../../environments/environment';
@@ -11,23 +12,24 @@ import {environment} from '../../environments/environment';
 
 export class AccountService {
 
+  private currentUserSubject = new BehaviorSubject<User | null>(null);
+  currentUser$ = this.currentUserSubject.asObservable();
+
   private tokenKey = 'auth_token';
 
   private apiUrl = `${environment.apiUrl}account/`;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.currentUserSubject.next(this.getCurrentUser());
+  }
 
   saveToken(token: string) {
     localStorage.setItem(this.tokenKey, token);
-  }
-
-  getToken(): string | null {
-    return localStorage.getItem(this.tokenKey);
+    this.currentUserSubject.next(this.getCurrentUser());
   }
 
   getDecodedToken(): any {
-    const token = this.getToken();
-    console.log(token);
+    const token = localStorage.getItem(this.tokenKey);
     if (token) {
       try {
         return jwtDecode(token);
@@ -51,10 +53,15 @@ export class AccountService {
   }
 
   logout() {
+    this.currentUserSubject.next(null);
     localStorage.removeItem(this.tokenKey);
   }
 
   Register(formData: FormData) {
     return this.http.post<RegisterResponse>(this.apiUrl + "register", formData);
+  }
+
+  Login(formData: FormData) {
+    return this.http.post<TokenModel>(this.apiUrl + "login", formData);
   }
 }

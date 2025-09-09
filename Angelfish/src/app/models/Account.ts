@@ -13,6 +13,10 @@ export interface RegisterResponse {
   userToken: string;
 }
 
+export interface TokenModel {
+  token: string;
+}
+
 export interface User {
 	name: string;
 	email: string;

@@ -19,7 +19,7 @@
           <!-- If user IS logged in -->
           <ng-container *ngIf="currentUser">
             <li class="nav-item d-flex align-items-center">
-              <img [src]=`${environment.imagePath}50_${currentUser.image}` [alt]="currentUser.name"
+              <img [src]=`${environment.imagePath}200_${currentUser.image}` [alt]="currentUser.name"
                 class="rounded-circle border border-white" style="width: 40px; height: 40px; object-fit: cover;" />
               <span class="nav-link disabled me-2">Привіт, {{ currentUser.name }}</span>
             </li>

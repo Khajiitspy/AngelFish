@@ -5,7 +5,7 @@ import { AccountService } from '../app/services/account.services';
 import { CommonModule } from '@angular/common';
 import { LoadingComponent } from './components/loading/loading';
 import { GlobalError } from './components/global-error/global-error';
-import {environment} from '../environments/environment';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-fish',
@@ -16,23 +16,19 @@ import {environment} from '../environments/environment';
 })
 export class App {
   protected readonly title = signal('AngelFish');
-
   currentUser: User | null = null;
 
   constructor(private accountService: AccountService) {}
 
   ngOnInit() {
-    this.loadCurrentUser();
-  }
-
-  loadCurrentUser() {
-    this.currentUser = this.accountService.getCurrentUser();
-    console.log(this.currentUser);
+    this.accountService.currentUser$.subscribe(user => {
+      this.currentUser = user;
+      console.log('User changed:', user);
+    });
   }
 
   logout() {
     this.accountService.logout();
-    this.currentUser = null;
   }
 
   protected readonly environment = environment;
