@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /source
 
 # Копіюємо проект і відновлюємо залежності
-COPY ["AngelAPI/AngelAPI.csproj", "AngelAPI/"]
+COPY ["Angelfish/AngelAPI.csproj", "AngelAPI/"]
 RUN dotnet restore "AngelAPI/AngelAPI.csproj"
 
 # Копіюємо всі файли і будуємо додаток
