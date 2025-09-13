@@ -1,0 +1,45 @@
+version: "3.9"
+networks:
+  myAppNetwork:
+    driver: bridge
+
+services:
+  db:
+    container_name: pg-container
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Pg#2025!Db$Secure7
+      POSTGRES_DB: autoAtbDb
+    volumes:
+      - /data/novakvova/postgresql/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - myAppNetwork
+    restart: unless-stopped
+  app:
+    container_name: angelfish-api-container
+    image: novakvova/angelfish-api
+    ports:
+      - "5801:8080"  
+    networks:
+      - myAppNetwork
+    volumes:
+      - /data/novakvova/images:/app/images
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
+    environment:
+        ConnectionStrings__DefaultConnection: "Host=db;Database=autoAtbDb;Username=postgres;Password=Pg#2025!Db$Secure7"
+
+  client:
+    container_name: angelfish-client-container
+    image: novakvova/angelfish-client
+    restart: on-failure
+    ports:
+      - "4080:80"  
+    networks:
+      - myAppNetwork
+
