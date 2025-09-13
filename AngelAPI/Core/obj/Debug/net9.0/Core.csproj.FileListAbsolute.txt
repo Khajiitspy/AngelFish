@@ -14,3 +14,19 @@
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/refint/Core.dll
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/Core.pdb
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Core/obj/Debug/net9.0/ref/Core.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\bin\Debug\net9.0\Core.deps.json
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\bin\Debug\net9.0\Core.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\bin\Debug\net9.0\Core.pdb
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\bin\Debug\net9.0\Domain.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\bin\Debug\net9.0\Domain.pdb
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.csproj.AssemblyReference.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.AssemblyInfoInputs.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.AssemblyInfo.cs
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.csproj.CoreCompileInputs.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.sourcelink.json
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.csproj.Up2Date
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\refint\Core.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\Core.pdb
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Core\obj\Debug\net9.0\ref\Core.dll

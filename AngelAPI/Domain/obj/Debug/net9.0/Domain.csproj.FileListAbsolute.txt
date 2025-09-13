@@ -13,3 +13,18 @@
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.pdb
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/Domain.genruntimeconfig.cache
 /home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/Debug/net9.0/ref/Domain.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\bin\Debug\net9.0\Domain.deps.json
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\bin\Debug\net9.0\Domain.runtimeconfig.json
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\bin\Debug\net9.0\Domain.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\bin\Debug\net9.0\Domain.pdb
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.sourcelink.json
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\refint\Domain.dll
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.pdb
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\Domain.genruntimeconfig.cache
+D:\Study\2025\39.Azure Options\Artur\AngelFish\AngelAPI\Domain\obj\Debug\net9.0\ref\Domain.dll

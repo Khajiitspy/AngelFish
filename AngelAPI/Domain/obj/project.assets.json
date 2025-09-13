@@ -3020,25 +3020,32 @@
     ]
   },
   "packageFolders": {
-    "/home/magicalabyss/.nuget/packages/": {}
+    "C:\\Users\\novak\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/Domain.csproj",
+      "projectUniqueName": "D:\\Study\\2025\\39.Azure Options\\Artur\\AngelFish\\AngelAPI\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/Domain.csproj",
-      "packagesPath": "/home/magicalabyss/.nuget/packages/",
-      "outputPath": "/home/magicalabyss/Documents/Projects/AngelFish/AngelAPI/Domain/obj/",
+      "projectPath": "D:\\Study\\2025\\39.Azure Options\\Artur\\AngelFish\\AngelAPI\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\novak\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\2025\\39.Azure Options\\Artur\\AngelFish\\AngelAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/magicalabyss/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\novak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3057,7 +3064,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -3104,7 +3111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
