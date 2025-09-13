@@ -12,7 +12,7 @@ services:
       POSTGRES_PASSWORD: Pg#2025!Db$Secure7
       POSTGRES_DB: autoAtbDb
     volumes:
-      - /data/artur/postgresql/data:/var/lib/postgresql/data
+      - /data/magicabyss/postgresql/data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     networks:
@@ -20,13 +20,13 @@ services:
     restart: unless-stopped
   app:
     container_name: angelfish-api-container
-    image: novakvova/angelfish-api
+    image: magicabyss/angelfish-api
     ports:
       - "5801:8080"  
     networks:
       - myAppNetwork
     volumes:
-      - /data/novakvova/images:/app/images
+      - /data/magicabyss/images:/app/images
     deploy:
       restart_policy:
         condition: on-failure
@@ -36,7 +36,7 @@ services:
 
   client:
     container_name: angelfish-client-container
-    image: novakvova/angelfish-client
+    image: magicabyss/angelfish-client
     restart: on-failure
     ports:
       - "4080:80"  
