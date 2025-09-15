@@ -1,4 +1,4 @@
-const baseUrl = 'http://myhost.com/';
+const baseUrl = 'http://localhost:5801/';
 
 export const environment = {
   production: false,
